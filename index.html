@@ -1,40 +1,29 @@
+AAA<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Grid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
-        <h3>Columnas de mismo ancho</h1>
+        <h1>Columnas de mismo ancho</h1>
         <div class="row">
-            <div class="col" style="background-color: blueviolet;">
+            <div class="col" style="background-color: wheat;">
                 <p>Columna 1</p>
             </div>
-            <div class="col" style="background-color: darkred;">
+            <div class="col" style="background-color: rebeccapurple;">
                 <p>Columna 2</p>
             </div>
-            <div class="col" style="background-color: lightcoral;">
+            <div class="col" style="background-color: red;">
                 <p>Columna 3</p>
             </div>
         </div>
-        <h3>Columnas de mismo ancho, con breakpoints</h1>
-        <!--
-            xs, sm, md, lg, xl
-        -->
-        <div class="row">
-            <div class="col-md">
-                <p>Columna 1</p>
-            </div>
-            <div class="col-md">
-                Columna 2
-            </div>
-            <div class="col-md">
-                Columna 3
-            </div>
-        </div>
-        <h3>Columnas con salto de linea</h3>
+        <h1>Columnas de mismo ancho, con breakpoints</h1>
         <div class="row">
             <div class="col">
                 <p>Columna 1</p>
@@ -42,7 +31,18 @@
             <div class="col">
                 <p>Columna 2</p>
             </div>
-            <!--Salto de linea-->
+            <div class="col-md">
+                <p>Columna 3</p>
+            </div>
+        </div>
+        <h3>Columnas con salto de línea</h3>
+        <div class="row">
+            <div class="col">
+                <p>Columna 1</p>
+            </div>
+            <div class="col">
+                <p>Columna 2</p>
+            </div>
             <div class="w-100"></div>
             <div class="col">
                 <p>Columna 3</p>
@@ -56,148 +56,154 @@
         </div>
         <h3>Columnas de ancho definido</h3>
         <div class="row">
-            <div class="col-9" style="background-color: midnightblue;">
-                <p>Columna 6</p>
+            <div class="col-9" style="background-color: rosybrown;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-3" style="background-color: mediumvioletred;">
-                <p>Columna 7</p>
+            <div class="col-3" style="background-color: royalblue;">
+                <p>Columna 2</p>
             </div>
-            <div class="col-8" style="background-color: mediumturquoise;">
-                <p>Columna 8</p>
-            </div>
-        </div>
-
-        h3>Columnas de ancho definido con breakpointsh3>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12" style="background-color: midnightblue;">
-                <p>Columna 9</p>
-            </div>
-            <div class="col-lg-5 col-md-6 col-sm-8" style="background-color: mediumvioletred;">
-                <p>Columna 10</p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-4" style="background-color: mediumturquoise;">
-                <p>Columna 11</p>
+            <div class="col-8" style="background-color: tan;">
+                <p>Columna 3</p>
             </div>
         </div>
-        <h3>Columnas de ancho variado</h3>
+        <h3>Columnas de ancho definido con breakpoints</h3>
         <div class="row">
-            <div class="col-md-2" style="background-color: mediumspringgreen;">
-                Columna 12
+            <div class="col-lg-4 col-md-6 col-sm-12" style="background-color: teal;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-md-auto" style="background-color: mediumslateblue;">
-                Columna de ancho variable
+            <div class="col-lg-5 col-md-6 col-sm-8" style="background-color: thistle;">
+                <p>Columna 2</p>
             </div>
-            <div class="col-md-2" style="background-color: mediumseagreen;">
-                Columna 12
+            <div class="col-lg-3 col-md-6 col-sm-4" style="background-color: tomato;">
+                <p>Columna 3</p>
+            </div>
+        </div>
+        <h3>Columnas de ancho variable</h3>
+        <div class="row">
+            <div class="col-md-2" style="background-color: turquoise;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-md-auto" style="background-color: yellow;">
+                <p>Columna de ancho variable</p>
+            </div>
+            <div class="col-md-2" style="background-color: indianred;">
+                <p>Columna 3</p>
             </div>
         </div>
         <h3>Filas con columnas definidas</h3>
-        <div class="row row-cols-2">
-            <div class="col" style="background-color: mediumpurple;">
-                <p>Columna 13</p>
+        <div class="row row-cols-3">
+            <div class="col" style="background-color: indigo;">
+                <p>Columna 1</p>
             </div>
-            <div class="col" style="background-color: mediumblue;">
-                <p>Columna 14</p>
+            <div class="col" style="background-color: ivory;">
+                <p>Columna 2</p>
             </div>
-            <div class="col" style="background-color: mediumaquamarine;">
-                <p>Columna 15</p>
+            <div class="col" style="background-color: olive;">
+                <p>Columna 3</p>
             </div>
-            <div class="col" style="background-color:maroon;">
-                <p>Columna 16</p>
+            <div class="col" style="background-color: orchid;">
+                <p>Columna 4</p>
             </div>
         </div>
-        <h3>Alineacion horizontal</h3>
+        <h3>Alineación Horizontal</h3>
         <h4>Start</h4>
         <div class="row justify-content-start">
-            <div class="col-4" style="background-color: magenta;">
-                Columna 17
+            <div class="col-4" style="background-color: orangered;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-4" style="background-color: linen;">
-                Columna 18
+            <div class="col-4" style="background-color: olivedrab;">
+                <p>Columna 2</p>
             </div>
         </div>
+
         <h4>Center</h4>
         <div class="row justify-content-center">
-            <div class="col-4" style="background-color: magenta;">
-                Columna 19
+            <div class="col-4" style="background-color: purple;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-4" style="background-color: linen;">
-                Columna 20
+            <div class="col-4" style="background-color: deeppink;">
+                <p>Columna 2</p>
             </div>
         </div>
+
         <h4>End</h4>
         <div class="row justify-content-end">
-            <div class="col-4" style="background-color: magenta;">
-                Columna 21
+            <div class="col-4" style="background-color: skyblue;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-4" style="background-color: linen;">
-                Columna 22
+            <div class="col-4" style="background-color: deeppink;">
+                <p>Columna 2</p>
             </div>
         </div>
+
         <h4>Around</h4>
         <div class="row justify-content-around">
-            <div class="col-4" style="background-color: magenta;">
-                Columna 23
+            <div class="col-4" style="background-color: skyblue;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-4" style="background-color: linen;">
-                Columna 24
+            <div class="col-4" style="background-color: deeppink;">
+                <p>Columna 2</p>
             </div>
         </div>
+
         <h4>Between</h4>
         <div class="row justify-content-between">
-            <div class="col-4" style="background-color: magenta;">
-                Columna 25
+            <div class="col-4" style="background-color: skyblue;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-4" style="background-color: linen;">
-                Columna 26
+            <div class="col-4" style="background-color: deeppink;">
+                <p>Columna 2</p>
             </div>
         </div>
-        <h3>Orden</h3>
+
+        <h3>Órden</h3>
         <div class="row">
-            <div class="col">
-                <p>Primera</p>
+            <div class="col order-1" style="background-color: skyblue;">
+                <p>Primera (1)</p>
             </div>
-            <div class="col order-11">
-                <p>Segunda</p>
+            <div class="col order-11" style="background-color: deeppink;">
+                <p>Segunda (11)</p>
             </div>
-            <div class="col order-2">
-                <p>Tercera</p>
+            <div class="col order-2" style="background-color: greenyellow;">
+                <p>Tercera (2)</p>
             </div>
         </div>
+
         <h3>Offset</h3>
         <div class="row">
-            <div class="col-md-4" style="background-color: limegreen;">
-                Columna 1
+            <div class="col-md-4" style="background-color: skyblue;">
+                <p>Columna 1</p>
             </div>
-            <div class="col-md-3 offset-md-2" style="background-color: lightyellow;">
-                Columna 2
+            <div class="col-md-3 offset-md-5" style="background-color: deeppink;">
+                <p>Columna 2</p>
             </div>
         </div>
+
         <h3>Nesting</h3>
         <div class="row">
             <div class="col">
                 <p>Columna 1</p>
                 <div class="row row-cols-2">
                     <div class="col">
-                        <p>Columna a</p>
+                        <p>Columna A</p>
                     </div>
                     <div class="col">
-                        <p>Columna b</p>
+                        <p>Columna B</p>
                     </div>
                     <div class="col">
-                        <p>Columna c</p>
+                        <p>Columna C</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <p>Columna 2</p>
+                Columna 2
             </div>
         </div>
-        
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
+
 </html>
